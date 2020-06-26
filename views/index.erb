@@ -1,0 +1,6 @@
+<ul>
+  <% @files.sort.each do |file| %>
+    <li><a href="/<%= file %>"><%= file %></a> | <a href="/<%= file %>/edit">Edit</a></li>
+  <% end %>
+</ul>
+<p><a href="/new">New Document</a></p>
